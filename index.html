@@ -87,7 +87,16 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-8 p-1 text-center">
                 <div class="list-group">
-                                                                                                                                                                                  </div>
+                  $for(links)$
+                  $for(it/pairs)$
+                  <a href=$it.value$>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      $it.key$
+                    </button>
+                  </a>
+                  $endfor$
+                  $endfor$
+                </div>                                                                                                                                                                </div>
               </div>
             </div>
             <div class="p pt-4 px-5">
