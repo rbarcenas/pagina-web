@@ -29,8 +29,19 @@
             <div class="p-2">
               <div id="icon-list">
                 <ul class="list-inline">
-
-                                                                                                                                                                                  </ul>
+                  
+                  $for(links)$
+                  $for(it/pairs)$
+                  <li class="list-inline-item">
+                    <a href=$it.value$>
+                      <button type="button" class="btn btn-outline-dark">
+                        $it.key$
+                      </button>
+                    </a>
+                  </li>
+                  $endfor$
+                  $endfor$
+               </ul>                                                                                                                                                                   </ul>
               </div>
             </div>
           </div>
